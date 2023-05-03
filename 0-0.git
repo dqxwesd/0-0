@@ -1,0 +1,5 @@
+#define PI float form(int k, float, float, float); main() { float x; int k=1; float 
+e; float s=0; printf("Enter the X:\n"); scanf("%f", &x); while (x<-0 || x>PI) { 
+printf("Error\n"); scanf("%f", &x); } printf("\nEnter the e\n"); scanf("%f", &e); 
+while (e<0) { printf("Error"); scanf("%f", &e); } printf("%f \n", form(k,s,x,e)); 
+getch(); } float form(int k, float y, float x, float e) { float a; a=cos((2*k-1)*x)/(2*k1) ; y=y+a; printf("%f\n",y); if (a<e) return(y); else return(form(k+1,y, x, e)); 
